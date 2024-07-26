@@ -1,0 +1,138 @@
+{
+  "decks": [
+    {
+      "id": 1,
+      "name": "Rendering in React",
+      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
+    },
+    {
+      "id": 2,
+      "name": "React Router",
+      "description": "React Router is a collectiodn of navigational components that compose declaratively with your application."
+    },
+    {
+      "name": "Deck Name",
+      "description": "Deck Description",
+      "id": 3
+    },
+    {
+      "name": "Deck Name",
+      "description": "Deck Description",
+      "id": 4
+    }
+  ],
+  "cards": [
+    {
+      "front": "Differentiate between Real DOM and Virtual DOM.",
+      "back": "Virtual DOaM updates are faster but do not directly update the HTML",
+      "id": 1
+    },
+    {
+      "front": "How do you modify the state of a different React wwwwww",
+      "back": "Not at all! State is visible to the component only.",
+      "id": 2
+    },
+    {
+      "front": "How do you pass data 'down' to a React child .jhadfhas;KLFHa;fhAKLHaf",
+      "back": "As properties or propssadfdsaf",
+      "id": 3
+    },
+    {
+      "front": "What path will match the follow Route?\n<Route>\n  <NotFound />\n</Route>",
+      "back": "All paths. A route with no path matches all URL's",
+      "deckId": 2,
+      "id": 4
+    },
+    {
+      "front": "What does <Switch> do?",
+      "back": "Renders the first matching child <Route> ",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "front": "basd",
+      "back": "b",
+      "id": 7
+    },
+    {
+      "front": "saf",
+      "back": "asfkjgk;jgk;jg;kj",
+      "id": 8
+    },
+    {
+      "front": "asf",
+      "back": "asfasfaa@",
+      "id": 9
+    },
+    {
+      "front": "asf",
+      "back": "asfasfastsetwet",
+      "id": 10
+    },
+    {
+      "front": "asfaaa",
+      "back": "asf",
+      "id": 11
+    },
+    {
+      "front": "zsfwet",
+      "back": "sf",
+      "id": 12
+    },
+    {
+      "front": "ruro",
+      "back": "f",
+      "id": 13
+    },
+    {
+      "front": "qwetweyr",
+      "back": "wet",
+      "id": 14
+    },
+    {
+      "front": "wertwetw6t346",
+      "back": "wet",
+      "id": 15
+    },
+    {
+      "id": 17,
+      "deckId": 1,
+      "front": "??newxs",
+      "back": "card"
+    },
+    {
+      "front": "ss",
+      "back": "ss",
+      "deckId": 1,
+      "id": 18
+    },
+    {
+      "id": 19,
+      "deckId": 3,
+      "front": "asfad",
+      "back": "asfad"
+    },
+    {
+      "front": "asf",
+      "back": "asf",
+      "deckId": 3,
+      "id": 20
+    },
+    {
+      "front": "asf",
+      "back": "asf",
+      "deckId": 3,
+      "id": 21
+    },
+    {
+      "front": "asfqwet",
+      "back": "qwt",
+      "deckId": 3,
+      "id": 22
+    },
+    {
+      "deckId": null,
+      "id": 23
+    }
+  ]
+}

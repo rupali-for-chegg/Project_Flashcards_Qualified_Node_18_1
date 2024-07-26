@@ -1,0 +1,78 @@
+/* Container for the home page */
+.home-container {
+    padding: 1rem;
+}
+
+/* Title for the home page */
+.home-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Link to create a new deck */
+.create-deck-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.create-deck-link:hover {
+    background-color: #0056b3;
+}
+
+/* Grid container for deck items */
+.deck-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+/* Styling for each deck card */
+.deck-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Actions inside deck cards */
+.deck-actions {
+    margin-top: 1rem;
+}
+
+/* Adjust link styling inside deck cards */
+.deck-card .link {
+    display: block;
+    margin: 0.5rem 0;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.deck-card .link:hover {
+    text-decoration: underline;
+}
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.btn-cancel {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
