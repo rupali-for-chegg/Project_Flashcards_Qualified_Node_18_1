@@ -47,7 +47,8 @@ function AddCard() {
                 },
                 abortController.signal
             );
-            navigate(`/decks/${deckId}`);
+           // navigate(`/decks/${deckId}`);
+            setFormData({back:'',   front: ''});
         } catch (error) {
             console.error(error);
         }
