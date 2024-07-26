@@ -14,18 +14,24 @@ function AddCard() {
     useEffect(() => {
         const abortController = new AbortController();
 
-        const loadDeck = async () => {
+        const fetchDeck = async () => {
             try {
-                const fetchedDeck = await readDeck(deckId, abortController.signal);
-                setDeck(fetchedDeck);
+                const deck = await readDeck(deckId, abortController.signal);
+                setDeck(deck);
             } catch (error) {
-                console.error(error);
+                if (error.name === "AbortError") {
+                    console.log("Fetch aborted");
+                } else {
+                    console.error("Failed to fetch deck:", error);
+                }
             }
         };
 
-        loadDeck();
+        fetchDeck();
 
-        return () => abortController.abort();
+        return () => {
+            abortController.abort();
+        };
     }, [deckId]);
 
     const handleChange = ({ target }) => {
@@ -38,20 +44,9 @@ function AddCard() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const abortController = new AbortController();
-        try {
-            await createCard(
-                {
-                    deckId: Number(deckId),
-                    ...formData,
-                },
-                abortController.signal
-            );
-           // navigate(`/decks/${deckId}`);
-            setFormData({back:'',   front: ''});
-        } catch (error) {
-            console.error(error);
-        }
+        await createCard(deckId, formData);
+        setFormData({front: '', back: ''});
+        //  navigate(`/decks/${deckId}`);
     };
 
     const handleCancel = () => {

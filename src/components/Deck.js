@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { readDeck, deleteDeck, deleteCard } from '../utils/api';
-import '../style.css';
+import '../deck.css'; // Import the CSS file for styling
 
 function Deck() {
     const [deck, setDeck] = useState({});

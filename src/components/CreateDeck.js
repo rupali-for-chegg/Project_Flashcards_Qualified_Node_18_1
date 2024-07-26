@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import '../style.css';
 
 function CreateDeck() {
-    const [deck, setDeck] = useState({ name: 'Deck Name', description: 'Deck Description' });
+    const [deck, setDeck] = useState({ name: '', description: '' });
     const navigate = useNavigate(); // Correctly use navigate
 
     const handleChange = ({ target }) => {
@@ -43,6 +43,7 @@ function CreateDeck() {
                         className="form-input"
                         name="name"
                         value={deck.name}
+                        placeholder="Enter the Deck Name" // Default text
                         onChange={handleChange}
                     />
                 </div>
@@ -53,6 +54,7 @@ function CreateDeck() {
                         className="form-input"
                         name="description"
                         value={deck.description}
+                        placeholder="Enter the Deck Description" // Default text
                         onChange={handleChange}
                     />
                 </div>
